@@ -1,0 +1,16 @@
+@mixin cta-1 {
+    padding: 1rem 2rem;
+    border: none;
+    background-color: lightgreen;
+    cursor: pointer;
+    border-radius: 4px;
+    outline: none;
+
+    &:hover{
+        transform: scale(1.020);
+    }
+
+    &:active{
+        transform: scale(0.98);
+    }
+}

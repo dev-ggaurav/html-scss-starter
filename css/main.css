@@ -1,0 +1,119 @@
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #6EE7B7;
+  padding: 0 1rem;
+}
+
+.header .hamburger {
+  display: inline-block;
+  text-align: center;
+  padding: 1rem;
+  position: relative;
+  cursor: pointer;
+}
+
+.header .hamburger i {
+  font-size: 2.4rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.header .hamburger .bx-x {
+  display: none;
+}
+
+.header .hamburger .bx-x.active {
+  display: block;
+}
+
+.header .hamburger .bx-menu.hidden {
+  display: none;
+}
+
+.header .nav {
+  max-width: 1280px;
+  margin: 0 auto;
+  height: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .hamburger {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .header .nav-menu {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    padding: 1.5rem 0 1rem;
+    text-align: center;
+    -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 4px 4px rgba(0, 0, 0, 0.05);
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+    border-radius: 10px;
+  }
+  .header .nav-menu.active {
+    top: 3rem;
+  }
+  .header .nav-item {
+    margin: 1.5rem 0;
+  }
+  .header .hamburger {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .header .nav-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .header .nav-item {
+    margin-left: 3rem;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+/*# sourceMappingURL=main.css.map */
